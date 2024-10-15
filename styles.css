@@ -4,11 +4,26 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   }
 
+  *:focus {
+    outline: 3px dotted #FF7500;
+    outline-offset: 3px;
+  }
+
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+}
+
+.logo-link {
+  transition: opacity 0.4s ease;
+}
+.logo-link:hover {
+  opacity: 0.8;
+}
+.logo-link:active {
+  opacity: 0.6;
 }
 .site-header-actions {
   display: flex;
@@ -25,9 +40,8 @@ body {
   display: flex;
   list-style: none;
 }
-.sitenav-item {
 
-}
+
 .sitenav-link {
   font-size: 13px;
   font-weight: 500;
@@ -36,13 +50,30 @@ body {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 0.4s ease,
+  opacity 0.4s ease;
 }
+
+.sitenav-link:hover {
+  color: #FF7500;
+}
+.sitenav-link:active {
+  opacity: 0.6;
+}
+/* MAIN LINK */
 .main-link {
   font-size: 13px;
   line-height: 15px;
   text-decoration: none;
   color: #fff;
   background-color: #FF7500;
+  transition: opacity 0.4 ease;
+}
+.main-link:hover {
+  opacity: 0.8;
+}
+.main-link:active {
+  opacity: 0.6;
 }
 .hero {
   display: flex;
@@ -144,6 +175,15 @@ body {
   display: flex;
   align-items: center;
 }
+.site-footer-socials a {
+  color: #252420;
+}
+.site-footer-socials a:hover {
+  color: #FF7500;
+}
+.site-footer-socials a:active {
+  opacity: 0.6;
+}
 
 .site-footer-divider {
   height: 2px;
@@ -161,4 +201,10 @@ body {
 .site-footer-links a {
   text-decoration: none;
   color: #252420;
+}
+.site-footer-links a:hover {
+  color: #FF7500;
+}
+.site-footer-links a:active {
+  opacity: 0.6;
 }
