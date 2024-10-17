@@ -2,6 +2,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
+
   }
 
   *:focus {
@@ -13,6 +14,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 5px solid #FF7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #fff;
 }
 
@@ -34,11 +38,11 @@ body {
   width: 227px;
   height: 59px;
 }
-.sitenav {
-}
+/* SITENAV */
 .sitenav-list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 
@@ -62,7 +66,11 @@ body {
 }
 /* MAIN LINK */
 .main-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
   font-size: 13px;
+  font-weight: bold;
   line-height: 15px;
   text-decoration: none;
   color: #fff;
@@ -75,10 +83,14 @@ body {
 .main-link:active {
   opacity: 0.6;
 }
+
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: #fff;
   background-color: #252420;
 }
@@ -89,6 +101,7 @@ body {
  .orange-line {
   width: 80px;
   height: 3px;
+  border: 0;
   background-color: #FF7500;
  }
 .hero-heading {
@@ -100,9 +113,14 @@ body {
 .hero-img {
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 
 /* Features */
+.features {
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .features-heading {
   width: 440px;
   font-size: 72px;
@@ -113,6 +131,7 @@ body {
 .features-list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
   list-style: none;
 }
 .feature {
@@ -120,8 +139,12 @@ body {
  list-style: none;
 }
 .feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
   background-color: rgba(255, 117, 0, 0.2);
 }
 .feature-title {
@@ -132,11 +155,12 @@ body {
 }
 
 
-/* Aksiya */
+/* Promo */
 .promo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
   background-color: #252420;
   color: #fff;
 }
@@ -156,11 +180,14 @@ body {
 .promo-img {
   width: 440px;
   height: 440px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
 /* Site-footer */
 .site-footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #F8F8F8;
 }
 .site-footer-top {
@@ -169,11 +196,13 @@ body {
   align-items: center;
 }
 .site-footer ul {
+  padding: 0;
   list-style: none;
 }
 .site-footer-socials {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .site-footer-socials a {
   color: #252420;
@@ -187,6 +216,7 @@ body {
 
 .site-footer-divider {
   height: 2px;
+  border: 0;
   background-color: rgba(37, 36, 32, 0.5);
 }
 
